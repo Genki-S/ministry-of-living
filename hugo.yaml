@@ -1,4 +1,34 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: https://ministry-of-living.uk/
+languageCode: en-GB
 theme: PaperMod
+title: Ministry of Living
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+languages:
+  en:
+    contentDir: content/en
+    disabled: false
+    languageCode: en-GB
+    languageDirection: ltr
+    languageName: English
+    title: Ministry of Living
+    params:
+      homeInfoParams:
+        Title: Ministry of Living
+        Content: >
+          Home Automation, HomeLab and things.
+    weight: 1
+  ja:
+    contentDir: content/ja
+    disabled: false
+    languageCode: ja
+    languageDirection: ltr
+    languageName: 日本語
+    title: 生活最適課
+    params:
+      homeInfoParams:
+        Title: 生活最適課
+        Content: >
+          Home Automation, HomeLab and things.
+    weight: 2
