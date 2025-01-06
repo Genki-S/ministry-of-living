@@ -1,7 +1,10 @@
 baseURL: https://ministry-of-living.uk/
-languageCode: en-GB
 theme: PaperMod
-title: Ministry of Living
+
+params:
+  ShowShareButtons: true
+  ShareButtons:
+    - "x"
 
 defaultContentLanguage: ja
 defaultContentLanguageInSubdir: true
