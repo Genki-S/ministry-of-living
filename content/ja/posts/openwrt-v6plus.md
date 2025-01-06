@@ -20,3 +20,4 @@ title: 'OpenWrtでv6プラス接続(2025年1月最新版)'
 - VMでやってる場合はこまめにsnapshotをとると吉です。私は3回くらいOpenWrtのVMを作り直しました。
 - OpenWrtで`opkg update && opkg install curl`をして、こまめに`curl -v -6 google.com`と`curl -v -4 google.com`でIPv6/IPv4インターネット接続を確認すると便利です。LAN内のデバイスからも同様に。
 - Arch LinuxでOpenWrtからIPアドレスをもらうときは、`sudo ip link set enpXXX down && sudo ip link set enpXXX up`が安定して成功しました。`sudo systemctl restart systemd-networkd`でもできるらしいですが私には動かず...
+- 元のルータをOpenWrtにぶら下げて二重ルータにすると元のLANを保持したまま少しずつ移行できて便利です。
